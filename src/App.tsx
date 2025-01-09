@@ -18,7 +18,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Sponsors />
       <About />
@@ -32,7 +32,7 @@ function App() {
       <Newsletter />
       <FAQ />
       <Footer />
-      <ScrollToTop />
+      <ScrollToTop /> */}
     </>
   );
 }

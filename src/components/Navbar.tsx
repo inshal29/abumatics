@@ -25,20 +25,20 @@ interface RouteProps {
 
 const routeList: RouteProps[] = [
   {
+    href: "#home",
+    label: "Home",
+  },
+  {
     href: "#features",
     label: "Features",
   },
   {
-    href: "#testimonials",
-    label: "Testimonials",
+    href: "#contact",
+    label: "Contact Us",
   },
   {
-    href: "#pricing",
-    label: "Pricing",
-  },
-  {
-    href: "#faq",
-    label: "FAQ",
+    href: "#about",
+    label: "About Us",
   },
 ];
 
@@ -55,6 +55,7 @@ export const Navbar = () => {
               className="ml-2 font-bold text-xl flex"
             >
               <LogoIcon />
+              Abumatics
             </a>
           </NavigationMenuItem>
 

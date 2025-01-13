@@ -1,12 +1,15 @@
+import logo from '../assets/abumaticslogo.png'; // Adjust path based on your file location
+
 export const LogoIcon = () => {
   return (
-      <img
-        src="src/assets/abumaticslogo.png" // Replace with your logo path
-        alt="Abumatics Logo"
-        className="h-10 w-30 object-contain" // Adjust height, width, and styling as needed
-      />
-    );
+    <img
+      src={logo}
+      alt="Abumatics Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
 };
+
 
 export const MedalIcon = () => {
   return (

@@ -1,4 +1,5 @@
 import { Button } from "./ui/button";
+import techIllustration from "../assets/techillustration.png";
 // import { buttonVariants } from "./ui/button";
 // import { HeroCards } from "./HeroCards";
 // import { GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -53,7 +54,7 @@ export const Hero = () => {
 
       <div className="hidden lg:block">
         <img
-          src="src\assets\techillustration.png"
+          src={techIllustration}
           alt="Technology Illustration"
           className="w-full max-w-lg"
         />

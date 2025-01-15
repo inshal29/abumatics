@@ -1,5 +1,5 @@
 import { Button } from "./ui/button";
-import techIllustration from "../assets/techillustration.png";
+import techIllustration from "../assets/techillustration2.png";
 // import { buttonVariants } from "./ui/button";
 // import { HeroCards } from "./HeroCards";
 // import { GitHubLogoIcon } from "@radix-ui/react-icons";
@@ -50,7 +50,7 @@ export const Hero = () => {
       </div> */}
 
       {/* Shadow effect */}
-      {/* <div className="shadow"></div> */}
+      <div className="shadow"></div>
 
       <div className="hidden lg:block">
         <img

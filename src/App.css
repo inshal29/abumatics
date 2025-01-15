@@ -67,52 +67,53 @@
   }
 } */
 
-/* *=========== Green theme =========== */
+/* *=========== Blue theme =========== */
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 240 10% 3.9%;
-    --card: 0 0% 100%;
+    --background: 0 0% 100%; /* White background */
+    --foreground: 240 10% 3.9%; /* Dark neutral for text */
+    --card: 0 0% 100%; /* White card background */
     --card-foreground: 240 10% 3.9%;
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
-    --primary: 142.1 76.2% 36.3%;
-    --primary-foreground: 355.7 100% 97.3%;
-    --secondary: 240 4.8% 95.9%;
-    --secondary-foreground: 240 5.9% 10%;
-    --muted: 240 4.8% 95.9%;
+    --primary: 211 85% 45%; /* Dark Blue (#0074D9) */
+    --primary-foreground: 0 0% 100%; /* White text on blue */
+    --secondary: 200 75% 65%; /* Light Blue (#70CFF3) */
+    --secondary-foreground: 240 10% 3.9%; /* Neutral text on light blue */
+    --muted: 210 15% 94%; /* Light muted color */
     --muted-foreground: 240 3.8% 46.1%;
-    --accent: 240 4.8% 95.9%;
-    --accent-foreground: 240 5.9% 10%;
-    --destructive: 0 84.2% 60.2%;
+    --accent: 200 75% 65%; /* Use light blue for accents */
+    --accent-foreground: 240 10% 3.9%;
+    --destructive: 0 84.2% 60.2%; /* Red for destructive actions */
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5.9% 90%;
-    --input: 240 5.9% 90%;
-    --ring: 142.1 76.2% 36.3%;
+    --border: 240 5.9% 90%; /* Light border */
+    --input: 240 5.9% 90%; /* Light input fields */
+    --ring: 211 85% 45%; /* Dark blue for focus ring */
     --radius: 0.5rem;
   }
-
+  
   .dark {
-    --background: 20 14.3% 4.1%;
-    --foreground: 0 0% 95%;
+    --background: 20 14.3% 4.1%; /* Dark gray background */
+    --foreground: 0 0% 95%; /* Light text */
     --card: 24 9.8% 10%;
     --card-foreground: 0 0% 95%;
     --popover: 0 0% 9%;
     --popover-foreground: 0 0% 95%;
-    --primary: 142.1 70.6% 45.3%;
-    --primary-foreground: 144.9 80.4% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --primary: 211 85% 55%; /* Slightly lighter blue for dark mode */
+    --primary-foreground: 0 0% 95%; /* Light text on blue */
+    --secondary: 200 75% 50%; /* Slightly dim light blue */
+    --secondary-foreground: 0 0% 98%; /* Light text on secondary */
     --muted: 0 0% 15%;
     --muted-foreground: 240 5% 64.9%;
-    --accent: 12 6.5% 15.1%;
+    --accent: 200 75% 50%; /* Accent matches secondary */
     --accent-foreground: 0 0% 98%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 85.7% 97.3%;
     --border: 240 3.7% 15.9%;
     --input: 240 3.7% 15.9%;
-    --ring: 142.4 71.8% 29.2%;
+    --ring: 211 85% 45%; /* Same blue for focus ring */
   }
+  
 }
 
 @layer base {

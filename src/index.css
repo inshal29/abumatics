@@ -47,20 +47,22 @@ html {
 
 @media (max-width: 768px) {
   .shadow {
-    top: 70px;
-    width: 100px;
-    height: 350px;
-    filter: blur(60px);
+    top: 50px;
+    width: 150px; /* Adjusted size */
+    height: 300px;
+    filter: blur(80px); /* Enhanced blur for visibility */
+    background: hsl(var(--primary, 240) / 50%); /* Fallback added */
   }
 
   @keyframes shadow-slide {
     from {
-      background: hsl(var(--primary) / 20%);
-      right: 280px;
+      background: hsl(var(--primary, 240) / 40%);
+      right: 200px;
     }
     to {
-      background: hsl(var(--primary) / 30%);
-      right: 100px;
+      background: hsl(var(--primary, 240) / 70%);
+      right: 80px;
     }
   }
 }
+

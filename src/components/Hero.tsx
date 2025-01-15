@@ -7,58 +7,55 @@ import techIllustration from "../assets/techillustration2.png";
 export const Hero = () => {
   return (
     <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
-      <div className="text-center lg:text-start space-y-6">
-      <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
+
+      {/* Text and Button Section */}
+      <div className="text-center lg:text-start space-y-6 lg:order-1">
+        <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Innovate with us
         </p>
         <main className="text-5xl md:text-6xl font-bold">
           <h1 className="inline">
-            <span className="inline gradient-text">
-              Abumatics
-            </span>{' '}
+            <span className="inline gradient-text">Abumatics</span>{' '}
           </h1>
           <h2 className="inline">
-            <span className="inline gradient-text">
-              Your Digital Technology Partner
-            </span>
+            <span className="inline gradient-text">Your Digital Technology Partner</span>
           </h2>
         </main>
+
+        {/* Image Section for Mobile (Before Text on Mobile) */}
+      <div className="lg:hidden order-1 mb-6">
+        <img
+          src={techIllustration}
+          alt="Technology Illustration"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+        />
+      </div>
+
+        {/* Paragraph Text */}
         <p className="text-xl text-gray-600 md:w-10/12 mx-auto lg:mx-0">
-        Empowering your business with cutting-edge technology solutions
+          Empowering your business with cutting-edge technology solutions
         </p>
 
+        {/* Button Section */}
         <div className="space-y-4 md:space-y-0 md:space-x-4">
           <Button className="w-full md:w-1/3">Contact us</Button>
-
-          {/* <a
-            rel="noreferrer noopener"
-            href="https://github.com/leoMirandaa/shadcn-landing-page.git"
-            target="_blank"
-            className={`w-full md:w-1/3 ${buttonVariants({
-              variant: "outline",
-            })}`}
-          >
-            Github Repository
-            <GitHubLogoIcon className="ml-2 w-5 h-5" />
-          </a> */}
         </div>
       </div>
 
-      {/* Hero cards sections */}
-      {/* <div className="z-10">
-        <HeroCards />
-      </div> */}
+      {/* Image Section for Desktop (Before Text on Larger Screens) */}
+      <div className="hidden lg:block lg:order-2">
+        <img
+          src={techIllustration}
+          alt="Technology Illustration"
+          className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto"
+        />
+      </div>
 
       {/* Shadow effect */}
       <div className="shadow"></div>
 
-      <div className="hidden lg:block">
-        <img
-          src={techIllustration}
-          alt="Technology Illustration"
-          className="w-full max-w-lg"
-        />
-      </div>
     </section>
   );
 };
+
+

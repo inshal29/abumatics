@@ -13,14 +13,15 @@ export const Hero = () => {
         <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide">
           Innovate with us
         </p>
-        <main className="text-5xl md:text-6xl font-bold">
-          <h1 className="inline">
-            <span className="inline gradient-text">Abumatics</span>{' '}
-          </h1>
-          <h2 className="inline">
-            <span className="inline gradient-text">Your Digital Technology Partner</span>
-          </h2>
-        </main>
+        <main className="font-bold">
+  <h1 className="text-6xl md:text-8xl gradient-text">
+    Abumatics
+  </h1>
+  <h2 className="text-3xl md:text-4xl mt-4 text-gray-500">
+    Your Digital Technology Partner
+  </h2>
+</main>
+
 
         {/* Image Section for Mobile (Before Text on Mobile) */}
       <div className="lg:hidden order-1 mb-6">

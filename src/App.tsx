@@ -1,7 +1,7 @@
 import { About } from "./components/About";
 // import { Cta } from "./components/Cta";
 // import { FAQ } from "./components/FAQ";
-// import { Features } from "./components/Features";
+import { Features } from "./components/Features";
 // import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
 // import { HowItWorks } from "./components/HowItWorks";
@@ -22,9 +22,9 @@ function App() {
       <Hero />
       {/* <Sponsors /> */}
       <About />
-      {/* <HowItWorks />
+      {/* <HowItWorks /> */}
       <Features />
-      <Services />
+      {/* <Services />
       <Cta />
       <Testimonials />
       <Team />

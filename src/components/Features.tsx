@@ -6,9 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import image from "../assets/growth.png";
-import image3 from "../assets/reflecting.png";
-import image4 from "../assets/looking-ahead.png";
+import image1 from "../assets/solutions.png";
+import image2 from "../assets/expert.png";
+import image3 from "../assets/innovative.png";
 
 interface FeatureProps {
   title: string;
@@ -18,36 +18,37 @@ interface FeatureProps {
 
 const features: FeatureProps[] = [
   {
-    title: "Responsive Design",
+    title: "Custom Technology Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image4,
+      "We provide tailored solutions for businesses of all sizes, from custom software to integrated systems that meet your unique needs.",
+    image: image1,
   },
   {
-    title: "Intuitive user interface",
+    title: "Expert Team of Developers",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
+      "Our team of experienced developers uses the latest technologies to build solutions that are both innovative and reliable.",
+    image: image2,
+  },
+  {
+    title: "Innovative Designs",
+    description:
+      "We focus on creating user-friendly, innovative designs that provide seamless experiences across platforms and devices.",
     image: image3,
-  },
-  {
-    title: "AI-Powered insights",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi nesciunt est nostrum omnis ab sapiente.",
-    image: image,
   },
 ];
 
 const featureList: string[] = [
-  "Dark/Light theme",
-  "Reviews",
-  "Features",
-  "Pricing",
-  "Contact form",
-  "Our team",
-  "Responsive design",
-  "Newsletter",
-  "Minimalist",
+  "Customization",
+  "Expertise",
+  "Scalability",
+  "Support",
+  "Innovation",
+  "Security",
+  "Agility",
+  "Affordability",
+  "Experience",
 ];
+
 
 export const Features = () => {
   return (

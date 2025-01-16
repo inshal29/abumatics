@@ -59,7 +59,7 @@ export const Services = () => {
             Services
           </h2>
 
-          {/* Image on Mobile */}
+          {/* Mobile Image Section */}
           <img
             src={services}
             className="w-[300px] md:w-[500px] lg:w-[600px] object-contain block lg:hidden"
@@ -74,23 +74,21 @@ export const Services = () => {
           <div className="flex flex-col gap-8">
             {serviceList.map(({ icon, title, description }: ServiceProps) => {
               const { ref, inView } = useInView({
-                triggerOnce: true, // Trigger only once when it comes into view
-                threshold: 0.5, // Trigger when 50% of the card is visible
+                triggerOnce: true,
+                threshold: 0.5,
               });
 
               return (
                 <Card
                   key={title}
                   ref={ref}
-                  className={`group relative transition-all transform ${inView ? 'hover:scale-105 hover:shadow-lg focus-within:scale-105 focus-within:shadow-lg' : ''}`}
+                  className={`hover:shadow-lg hover:scale-[1.02] transition-transform duration-300 ${inView ? 'opacity-100' : 'opacity-50'}`}
                 >
                   <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
                     <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
                     <div>
-                      <CardTitle className="group-hover:text-primary transition-all focus-within:text-primary">
-                        {title}
-                      </CardTitle>
-                      <CardDescription className="group-hover:text-muted-foreground transition-all focus-within:text-muted-foreground text-md mt-2">
+                      <CardTitle>{title}</CardTitle>
+                      <CardDescription className="text-md mt-2">
                         {description}
                       </CardDescription>
                     </div>
@@ -101,7 +99,7 @@ export const Services = () => {
           </div>
         </div>
 
-        {/* Image on Desktop */}
+        {/* Desktop Image Section */}
         <img
           src={services}
           className="w-[300px] md:w-[500px] lg:w-[600px] object-contain hidden md:block"

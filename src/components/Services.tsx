@@ -79,18 +79,22 @@ export const Services = () => {
 
           <div className="flex flex-col gap-8">
             {serviceList.map(({ icon, title, description }: ServiceProps) => (
-              <Card key={title} className="hover:shadow-lg hover:scale-[1.02] transition-transform duration-300">
-                
-                <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-                  <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
-                  <div>
-                    <CardTitle>{title}</CardTitle>
-                    <CardDescription className="text-md mt-2">
-                      {description}
-                    </CardDescription>
-                  </div>
-                </CardHeader>
-              </Card>
+              <Card
+              key={title}
+              className="group relative transition-all transform hover:scale-105 hover:shadow-lg"
+            >
+              <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
+                <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
+                <div>
+                  <CardTitle className="group-hover:text-primary transition-all">
+                    {title}
+                  </CardTitle>
+                  <CardDescription className="group-hover:text-muted-foreground transition-all text-md mt-2">
+                    {description}
+                  </CardDescription>
+                </div>
+              </CardHeader>
+            </Card>
             ))}
           </div>
         </div>

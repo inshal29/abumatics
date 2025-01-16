@@ -6,7 +6,7 @@ import techIllustration from "../assets/techillustration2.png";
 
 export const Hero = () => {
   return (
-    <section className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
+    <section id="home" className="container grid lg:grid-cols-2 place-items-center py-20 md:py-32 gap-10">
 
       {/* Text and Button Section */}
       <div className="text-center lg:text-start space-y-6 lg:order-1">

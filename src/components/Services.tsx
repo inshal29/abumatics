@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import { Card, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { WebDevelopmentIcon, PhotographyIcon, EcommerceIcon, AdvertisementIcon, SocialMediaIcon, DataEntryIcon, InventoryIcon } from "./Icons"; // Replace with actual icons if available
 import services from "../assets/Services.png";
@@ -11,45 +12,38 @@ interface ServiceProps {
 const serviceList: ServiceProps[] = [
   {
     title: "Web Development",
-    description:
-      "Create stunning, responsive websites tailored to your brand's identity and goals.",
-    icon: <WebDevelopmentIcon />, // Use an appropriate icon for Web Development
+    description: "Create stunning, responsive websites tailored to your brand's identity and goals.",
+    icon: <WebDevelopmentIcon />,
   },
   {
     title: "Photography and Videography",
-    description:
-      "Capture your moments with professional-grade photography and videography services.",
-    icon: <PhotographyIcon />, // Use an appropriate icon for Photography
+    description: "Capture your moments with professional-grade photography and videography services.",
+    icon: <PhotographyIcon />,
   },
   {
     title: "E-Commerce Solutions",
-    description:
-      "Build and manage your online store with ease, featuring user-friendly design and functionality.",
-    icon: <EcommerceIcon />, // Use an appropriate icon for E-commerce
+    description: "Build and manage your online store with ease, featuring user-friendly design and functionality.",
+    icon: <EcommerceIcon />,
   },
   {
     title: "Advertisements",
-    description:
-      "Reach your target audience with impactful and creative ad campaigns.",
-    icon: <AdvertisementIcon />, // Use an appropriate icon for Advertisements
+    description: "Reach your target audience with impactful and creative ad campaigns.",
+    icon: <AdvertisementIcon />,
   },
   {
     title: "Social Media Management",
-    description:
-      "Elevate your online presence with strategic social media management and content creation.",
-    icon: <SocialMediaIcon />, // Use an appropriate icon for Social Media
+    description: "Elevate your online presence with strategic social media management and content creation.",
+    icon: <SocialMediaIcon />,
   },
   {
     title: "Data Entry Services",
-    description:
-      "Streamline your business operations with efficient and accurate data entry solutions.",
-    icon: <DataEntryIcon/>, // Use an appropriate icon for Data Entry
+    description: "Streamline your business operations with efficient and accurate data entry solutions.",
+    icon: <DataEntryIcon />,
   },
   {
     title: "Inventory and Product Listing Management",
-    description:
-      "Keep your e-commerce operations seamless with organized inventory and product listing management.",
-    icon: <InventoryIcon />, // Use an appropriate icon for Inventory
+    description: "Keep your e-commerce operations seamless with organized inventory and product listing management.",
+    icon: <InventoryIcon />,
   },
 ];
 
@@ -65,47 +59,55 @@ export const Services = () => {
             Services
           </h2>
 
+          {/* Image on Mobile */}
           <img
-  src={services}
-  className="w-[300px] md:w-[500px] lg:w-[600px] object-contain block lg:hidden"
-  alt="Services Visual"
-  loading="lazy"
-/>
-
+            src={services}
+            className="w-[300px] md:w-[500px] lg:w-[600px] object-contain block lg:hidden"
+            alt="Services Visual"
+            loading="lazy"
+          />
 
           <p className="text-muted-foreground text-xl mt-4 mb-8">
             Providing comprehensive solutions to meet your business needs with quality and efficiency.
           </p>
 
           <div className="flex flex-col gap-8">
-            {serviceList.map(({ icon, title, description }: ServiceProps) => (
-              <Card
-              key={title}
-              className="group relative transition-all transform hover:scale-105 hover:shadow-lg focus-within:scale-105 focus-within:shadow-lg"
-            >
-              <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
-                <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
-                <div>
-                  <CardTitle className="group-hover:text-primary transition-all focus-within:text-primary">
-                    {title}
-                  </CardTitle>
-                  <CardDescription className="group-hover:text-muted-foreground transition-all focus-within:text-muted-foreground text-md mt-2">
-                    {description}
-                  </CardDescription>
-                </div>
-              </CardHeader>
-            </Card>
-            ))}
+            {serviceList.map(({ icon, title, description }: ServiceProps) => {
+              const { ref, inView } = useInView({
+                triggerOnce: true, // Trigger only once when it comes into view
+                threshold: 0.5, // Trigger when 50% of the card is visible
+              });
+
+              return (
+                <Card
+                  key={title}
+                  ref={ref}
+                  className={`group relative transition-all transform ${inView ? 'hover:scale-105 hover:shadow-lg focus-within:scale-105 focus-within:shadow-lg' : ''}`}
+                >
+                  <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
+                    <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
+                    <div>
+                      <CardTitle className="group-hover:text-primary transition-all focus-within:text-primary">
+                        {title}
+                      </CardTitle>
+                      <CardDescription className="group-hover:text-muted-foreground transition-all focus-within:text-muted-foreground text-md mt-2">
+                        {description}
+                      </CardDescription>
+                    </div>
+                  </CardHeader>
+                </Card>
+              );
+            })}
           </div>
         </div>
 
-         {/* Image Section */}
-         <img
-  src={services}
-  className="w-[300px] md:w-[500px] lg:w-[600px] object-contain hidden md:block"
-  alt="Services Visual"
-  loading="lazy"
-/>
+        {/* Image on Desktop */}
+        <img
+          src={services}
+          className="w-[300px] md:w-[500px] lg:w-[600px] object-contain hidden md:block"
+          alt="Services Visual"
+          loading="lazy"
+        />
       </div>
     </section>
   );

@@ -23,13 +23,13 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "https://i.pravatar.cc/150?img=35",
-    name: "Emma Smith",
-    position: "Product Manager",
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Naveed Damudi",
+    position: "Founder",
     socialNetworks: [
       {
         name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+        url: "",
       },
       {
         name: "Facebook",
@@ -42,8 +42,8 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=60",
-    name: "John Doe",
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Abdul Majeed",
     position: "Tech Lead",
     socialNetworks: [
       {
@@ -61,9 +61,9 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=36",
-    name: "Ashley Ross",
-    position: "Frontend Developer",
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Abdullah Inshal",
+    position: "Developer",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -77,9 +77,39 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "https://i.pravatar.cc/150?img=17",
-    name: "Bruce Rogers",
-    position: "Backend Developer",
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Syed Nawaz",
+    position: "Digital Marketing Specialist",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Abdullah Quazi",
+    position: "Developer",
+    socialNetworks: [
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      },
+      {
+        name: "Facebook",
+        url: "https://www.facebook.com/",
+      },
+    ],
+  },
+  {
+    imageUrl: "../src/assets/avatar.jpg",
+    name: "Umer Ekkeri",
+    position: "Marketing Specialist",
     socialNetworks: [
       {
         name: "Linkedin",
@@ -120,11 +150,10 @@ export const Team = () => {
       </h2>
 
       <p className="mt-4 mb-10 text-xl text-muted-foreground">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis
-        dolor pariatur sit!
+      Our team is made up of passionate, skilled, and experienced professionals who work together to deliver exceptional results. With diverse backgrounds and expertise, we bring creativity, innovation, and collaboration to every project.
       </p>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 gap-y-10">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 gap-y-10">
         {teamList.map(
           ({ imageUrl, name, position, socialNetworks }: TeamProps) => (
             <Card
@@ -144,7 +173,7 @@ export const Team = () => {
               </CardHeader>
 
               <CardContent className="text-center pb-2">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p> */}
               </CardContent>
 
               <CardFooter>

@@ -81,15 +81,15 @@ export const Services = () => {
             {serviceList.map(({ icon, title, description }: ServiceProps) => (
               <Card
               key={title}
-              className="group relative transition-all transform hover:scale-105 hover:shadow-lg"
+              className="group relative transition-all transform hover:scale-105 hover:shadow-lg focus-within:scale-105 focus-within:shadow-lg"
             >
               <CardHeader className="space-y-1 flex md:flex-row justify-start items-start gap-4">
                 <div className="mt-1 bg-primary/20 p-1 rounded-2xl">{icon}</div>
                 <div>
-                  <CardTitle className="group-hover:text-primary transition-all">
+                  <CardTitle className="group-hover:text-primary transition-all focus-within:text-primary">
                     {title}
                   </CardTitle>
-                  <CardDescription className="group-hover:text-muted-foreground transition-all text-md mt-2">
+                  <CardDescription className="group-hover:text-muted-foreground transition-all focus-within:text-muted-foreground text-md mt-2">
                     {description}
                   </CardDescription>
                 </div>

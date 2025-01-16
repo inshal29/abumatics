@@ -650,3 +650,98 @@ export const MagnifierIcon = () => {
     </svg>
   );
 };
+
+import web from '../assets/servicesimg/1.png'; // Adjust path based on your file location
+
+export const WebDevelopmentIcon = () => {
+  return (
+    <img
+      src={web}
+      alt="Web Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import camera from '../assets/servicesimg/2.png'; // Adjust path based on your file location
+
+export const PhotographyIcon = () => {
+  return (
+    <img
+      src={camera}
+      alt="Photography Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import ecommerce from '../assets/servicesimg/3.png'; // Adjust path based on your file location
+
+export const EcommerceIcon = () => {
+  return (
+    <img
+      src={ecommerce}
+      alt="Ecommerce Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import ads from '../assets/servicesimg/4.png'; // Adjust path based on your file location
+
+export const AdvertisementIcon = () => {
+  return (
+    <img
+      src={ads}
+      alt="Advertisement Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import sm from '../assets/servicesimg/5.png'; // Adjust path based on your file location
+
+export const SocialMediaIcon = () => {
+  return (
+    <img
+      src={sm}
+      alt="Social Media Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import dataentry from '../assets/servicesimg/6.png'; // Adjust path based on your file location
+
+export const DataEntryIcon = () => {
+  return (
+    <img
+      src={dataentry}
+      alt="Data Entry Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+
+import inventory from '../assets/servicesimg/7.png'; // Adjust path based on your file location
+
+export const InventoryIcon = () => {
+  return (
+    <img
+      src={inventory}
+      alt="Inventory Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
+// Exporting All Icons
+export default {
+  WebDevelopmentIcon,
+  PhotographyIcon,
+  EcommerceIcon,
+  AdvertisementIcon,
+  SocialMediaIcon,
+  DataEntryIcon,
+  InventoryIcon,
+};
+

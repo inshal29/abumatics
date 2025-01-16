@@ -1,3 +1,4 @@
+import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 
 export const Statistics = () => {
@@ -25,20 +26,28 @@ export const Statistics = () => {
     },
   ];
 
+  // Create an intersection observer for the statistics section
+  const { ref, inView } = useInView({
+    triggerOnce: true,  // Trigger the animation only once
+    threshold: 0.5,     // Trigger when 50% of the section is in view
+  });
+
   return (
-    <section id="statistics" className="py-12">
+    <section id="statistics" className="py-12" ref={ref}>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {stats.map(({ quantity, description }: statsProps) => (
           <div key={description} className="space-y-2 text-center">
             {/* CountUp animation for quantity */}
             <h2 className="text-3xl sm:text-4xl font-bold text-primary">
-              <CountUp
-                start={0}
-                end={parseInt(quantity.replace('+', ''))} // Extract number from the string
-                duration={2} // Duration of animation in seconds
-                suffix={quantity.includes('+') ? '+' : ''} // Add '+' symbol if necessary
-                separator="," // Add thousands separator
-              />
+              {inView && (
+                <CountUp
+                  start={0}
+                  end={parseInt(quantity.replace('+', ''))} // Extract number from the string
+                  duration={2} // Duration of animation in seconds
+                  suffix={quantity.includes('+') ? '+' : ''} // Add '+' symbol if necessary
+                  separator="," // Add thousands separator
+                />
+              )}
             </h2>
             <p className="text-xl text-muted-foreground">{description}</p>
           </div>
@@ -47,3 +56,4 @@ export const Statistics = () => {
     </section>
   );
 };
+

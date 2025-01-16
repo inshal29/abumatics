@@ -746,6 +746,18 @@ export const SeoIcon = () => {
     />
   );
 };
+
+import brandImage from '../assets/servicesimg/9.png'; // Adjust path based on your file location
+
+export const BrandIcon = () => {
+  return (
+    <img
+      src={brandImage}
+      alt="SEO Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
 // Exporting All Icons
 export default {
   WebDevelopmentIcon,
@@ -755,5 +767,7 @@ export default {
   SocialMediaIcon,
   DataEntryIcon,
   InventoryIcon,
+  SeoIcon,
+  BrandIcon,
 };
 

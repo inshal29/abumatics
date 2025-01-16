@@ -1,6 +1,6 @@
 import { useInView } from 'react-intersection-observer';
 import { Card, CardDescription, CardHeader, CardTitle, CardFooter } from "./ui/card";
-import { WebDevelopmentIcon, PhotographyIcon, EcommerceIcon, AdvertisementIcon, SocialMediaIcon, DataEntryIcon, InventoryIcon,SeoIcon } from "./Icons";
+import { WebDevelopmentIcon, PhotographyIcon, EcommerceIcon, AdvertisementIcon, SocialMediaIcon, DataEntryIcon, InventoryIcon,SeoIcon, BrandIcon } from "./Icons";
 import services from "../assets/Services.png";
 
 // Example images for larger screens
@@ -11,7 +11,8 @@ import advertisementImage from "../assets/servicesimg/4.png";
 import socialMediaImage from "../assets/servicesimg/5.png";
 import dataEntryImage from "../assets/servicesimg/6.png";
 import inventoryImage from "../assets/servicesimg/7.png";
-import seoImage from "../assets/servicesimg/8.png"
+import seoImage from "../assets/servicesimg/8.png";
+import brandImage from "../assets/servicesimg/9.png";
 
 interface ServiceProps {
   title: string;
@@ -68,6 +69,12 @@ const serviceList: ServiceProps[] = [
     description: "Enhance your website’s visibility and ranking on search engines with our expert SEO strategies, ensuring your content reaches a larger audience.",
     icon: <SeoIcon />,
     image: seoImage,
+  },
+  {
+    title: "Branding",
+    description: "Build a strong and memorable brand identity with custom logo design, messaging, and visual elements that connect with your audience.",
+    icon: <BrandIcon />,
+    image: brandImage,
   },
 ];
 

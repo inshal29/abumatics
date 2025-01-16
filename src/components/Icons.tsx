@@ -734,6 +734,18 @@ export const InventoryIcon = () => {
     />
   );
 };
+
+import seoImage from '../assets/servicesimg/8.png'; // Adjust path based on your file location
+
+export const SeoIcon = () => {
+  return (
+    <img
+      src={seoImage}
+      alt="SEO Logo"
+      className="h-10 w-auto object-contain" // Adjust height and width as needed
+    />
+  );
+};
 // Exporting All Icons
 export default {
   WebDevelopmentIcon,

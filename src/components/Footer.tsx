@@ -83,7 +83,7 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.instagram.com/inshal_armar/"
+            href="https://www.linkedin.com/in/inshal-armar-172895334/"
             className="text-primary dark:text-primary transition-all hover:border-b-2"
           >
             Inshal
@@ -92,7 +92,7 @@ export const Footer = () => {
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.instagram.com/inshal_armar/"
+            href="https://www.linkedin.com/in/majeed-mohtesham"
             className="text-primary dark:text-primary transition-all hover:border-b-2"
           >
             Abdul Majeed

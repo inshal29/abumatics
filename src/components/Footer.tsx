@@ -2,164 +2,100 @@ import { LogoIcon } from "./Icons";
 
 export const Footer = () => {
   return (
-    <footer id="footer">
-      <hr className="w-11/12 mx-auto" />
+    <footer
+      id="footer"
+      className="bg-gray-50 text-gray-700 dark:bg-gray-900 dark:text-gray-200"
+    >
+      {/* Divider */}
+      <hr className="w-11/12 mx-auto border-gray-300 dark:border-gray-700" />
 
-      <section className="container py-20 grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-x-12 gap-y-8">
-        <div className="col-span-full xl:col-span-2">
+      {/* Main Footer Content */}
+      <section className="container py-16 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-12">
+        {/* Logo and Tagline */}
+        <div className="col-span-full xl:col-span-2 flex flex-col items-start">
           <a
             rel="noreferrer noopener"
             href="/"
-            className="font-bold text-xl flex"
+            className="font-bold text-xl flex items-center gap-2 text-gray-800 dark:text-gray-100"
           >
             <LogoIcon />
-            ShadcnUI/React
           </a>
+          <p className="mt-3 text-sm text-gray-600 dark:text-gray-400">
+            Empowering Your Digital Presence.
+          </p>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Follow US</h3>
+        {/* Follow Us */}
+        <div className="flex flex-col gap-4">
+          <h3 className="font-bold text-lg text-gray-800 dark:text-gray-100">
+            Follow Us
+          </h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
-              Github
+              Instagram
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
-              Twitter
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Dribbble
+              Facebook
             </a>
           </div>
         </div>
 
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Platforms</h3>
+        {/* Platforms */}
+        <div className="flex flex-col gap-4">
+          <h3 className="font-bold text-lg text-gray-800 dark:text-gray-100">
+            Platforms
+          </h3>
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
               Web
             </a>
           </div>
-
           <div>
             <a
               rel="noreferrer noopener"
               href="#"
-              className="opacity-60 hover:opacity-100"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
               Mobile
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Desktop
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">About</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Features
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Pricing
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              FAQ
-            </a>
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-2">
-          <h3 className="font-bold text-lg">Community</h3>
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Youtube
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Discord
-            </a>
-          </div>
-
-          <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
-              className="opacity-60 hover:opacity-100"
-            >
-              Twitch
             </a>
           </div>
         </div>
       </section>
 
+      {/* Credits Section */}
       <section className="container pb-14 text-center">
-        <h3>
-          &copy; 2024 Landing page made by{" "}
+        <h3 className="text-sm text-gray-600 dark:text-gray-400">
+          &copy; {new Date().getFullYear()} Abumatics. Crafted with love by{" "}
           <a
             rel="noreferrer noopener"
             target="_blank"
-            href="https://www.linkedin.com/in/leopoldo-miranda/"
-            className="text-primary transition-all border-primary hover:border-b-2"
+            href="https://www.instagram.com/inshal_armar/"
+            className="text-primary dark:text-primary transition-all hover:border-b-2"
           >
-            Leo Miranda
+            Inshal
+          </a>{" "}
+          &{" "}
+          <a
+            rel="noreferrer noopener"
+            target="_blank"
+            href="https://www.instagram.com/inshal_armar/"
+            className="text-primary dark:text-primary transition-all hover:border-b-2"
+          >
+            Abdul Majeed
           </a>
         </h3>
       </section>

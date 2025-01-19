@@ -8,6 +8,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Facebook, Instagram, Linkedin } from "lucide-react";
+import avatar from "../assets/avatar.jpg";
 
 interface TeamProps {
   imageUrl: string;
@@ -23,18 +24,18 @@ interface SociaNetworkslProps {
 
 const teamList: TeamProps[] = [
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Naveed Damudi",
     position: "Founder",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
+      // {
+      //   name: "Linkedin",
+      //   url: "",
+      // },
+      // {
+      //   name: "Facebook",
+      //   url: "https://www.facebook.com/",
+      // },
       {
         name: "Instagram",
         url: "https://www.instagram.com/",
@@ -42,82 +43,82 @@ const teamList: TeamProps[] = [
     ],
   },
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Abdul Majeed",
     position: "Tech Lead",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
-      },
+      // {
+      //   name: "Linkedin",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
+      // {
+      //   name: "Facebook",
+      //   url: "https://www.facebook.com/",
+      // },
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/its_majeed/",
       },
     ],
   },
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Abdullah Inshal",
     position: "Developer",
     socialNetworks: [
-      {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
+      // {
+      //   name: "Linkedin",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
 
       {
         name: "Instagram",
-        url: "https://www.instagram.com/",
+        url: "https://www.instagram.com/inshal_armar/",
       },
     ],
   },
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Syed Nawaz",
     position: "Digital Marketing Specialist",
     socialNetworks: [
+      // {
+      //   name: "Linkedin",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
       {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Instagram",
+        url: "https://www.instagram.com/its.nawazz/",
       },
     ],
   },
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Abdullah Quazi",
     position: "Developer",
     socialNetworks: [
+      // {
+      //   name: "Linkedin",
+      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+      // },
       {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Instagram",
+        url: "https://www.instagram.com/abdullah__quazi/",
       },
     ],
   },
   {
-    imageUrl: "../src/assets/avatar.jpg",
+    imageUrl: avatar,
     name: "Umer Ekkeri",
     position: "Marketing Specialist",
     socialNetworks: [
+      // {
+      //   name: "Linkedin",
+      //   url: "",
+      // },
       {
-        name: "Linkedin",
-        url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      },
-      {
-        name: "Facebook",
-        url: "https://www.facebook.com/",
+        name: "Instagram",
+        url: "https://www.instagram.com/umerekkery_/",
       },
     ],
   },

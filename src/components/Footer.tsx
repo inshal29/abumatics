@@ -48,6 +48,15 @@ export const Footer = () => {
               Facebook
             </a>
           </div>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
+            >
+              LinkedIn
+            </a>
+          </div>
         </div>
 
         {/* Platforms */}

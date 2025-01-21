@@ -61,52 +61,52 @@ const teamList: TeamProps[] = [
       },
     ],
   },
-  {
-    imageUrl: avatar,
-    name: "Abdullah Inshal",
-    position: "Developer",
-    socialNetworks: [
-      // {
-      //   name: "Linkedin",
-      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      // },
+  // {
+  //   imageUrl: avatar,
+  //   name: "Abdullah Inshal",
+  //   position: "Developer",
+  //   socialNetworks: [
+  //     // {
+  //     //   name: "Linkedin",
+  //     //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+  //     // },
 
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/inshal_armar/",
-      },
-    ],
-  },
-  {
-    imageUrl: avatar,
-    name: "Syed Nawaz",
-    position: "Digital Marketing Specialist",
-    socialNetworks: [
-      // {
-      //   name: "Linkedin",
-      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      // },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/its.nawazz/",
-      },
-    ],
-  },
-  {
-    imageUrl: avatar,
-    name: "Abdullah Quazi",
-    position: "Developer",
-    socialNetworks: [
-      // {
-      //   name: "Linkedin",
-      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      // },
-      {
-        name: "Instagram",
-        url: "https://www.instagram.com/abdullah__quazi/",
-      },
-    ],
-  },
+  //     {
+  //       name: "Instagram",
+  //       url: "https://www.instagram.com/inshal_armar/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: avatar,
+  //   name: "Syed Nawaz",
+  //   position: "Digital Marketing Specialist",
+  //   socialNetworks: [
+  //     // {
+  //     //   name: "Linkedin",
+  //     //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+  //     // },
+  //     {
+  //       name: "Instagram",
+  //       url: "https://www.instagram.com/its.nawazz/",
+  //     },
+  //   ],
+  // },
+  // {
+  //   imageUrl: avatar,
+  //   name: "Abdullah Quazi",
+  //   position: "Developer",
+  //   socialNetworks: [
+  //     // {
+  //     //   name: "Linkedin",
+  //     //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
+  //     // },
+  //     {
+  //       name: "Instagram",
+  //       url: "https://www.instagram.com/abdullah__quazi/",
+  //     },
+  //   ],
+  // },
   {
     imageUrl: avatar,
     name: "Umer Ekkeri",

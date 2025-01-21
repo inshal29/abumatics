@@ -73,6 +73,8 @@ export const Footer = () => {
             >
               support@abumatics.com
             </a>
+            </div>
+            <div>
             <a
               href="https://www.google.com/maps/search/?api=1&query=Abumatics,+Moulana+Azad+Road,+Bhatkal+581320"
               target="_blank"

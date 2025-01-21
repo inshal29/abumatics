@@ -71,21 +71,19 @@ export const Footer = () => {
               href="mailto:support@abumatics.com"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
-            support@abumatics.com
+              support@abumatics.com
             </a>
-          </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <h3 className="font-bold text-lg text-gray-800 dark:text-gray-100">
-            Address
-          </h3>
-          <div>
-            <p
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Abumatics,+Moulana+Azad+Road,+Bhatkal+581320"
+              target="_blank"
+              rel="noreferrer noopener"
+              aria-label="View Abumatics location on Google Maps"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
               Abumatics, Moulana Azad Road, Bhatkal 581320
-            </p>
+            </a>
           </div>
+        
         </div>
       </section>
 

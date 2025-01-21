@@ -53,7 +53,7 @@ export const Footer = () => {
         {/* Platforms */}
         <div className="flex flex-col gap-4">
           <h3 className="font-bold text-lg text-gray-800 dark:text-gray-100">
-            Platforms
+            Contact
           </h3>
           <div>
             <a
@@ -61,7 +61,7 @@ export const Footer = () => {
               href="#"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
-              Web
+              +91 86608 22267
             </a>
           </div>
           <div>
@@ -70,7 +70,7 @@ export const Footer = () => {
               href="#"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
-              Mobile
+            support@abumatics.com
             </a>
           </div>
         </div>

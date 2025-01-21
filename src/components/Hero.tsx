@@ -39,7 +39,7 @@ export const Hero = () => {
 
         {/* Button Section */}
         <div className="space-y-4 md:space-y-0 md:space-x-4">
-          <Button className="w-full md:w-1/3">Contact us</Button>
+          <Button className="w-full md:w-1/3"><a href="#contact-us">Contact us</a></Button>
         </div>
       </div>
 

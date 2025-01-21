@@ -47,10 +47,10 @@ const teamList: TeamProps[] = [
     name: "Abdul Majeed",
     position: "Tech Lead",
     socialNetworks: [
-      // {
-      //   name: "Linkedin",
-      //   url: "https://www.linkedin.com/in/leopoldo-miranda/",
-      // },
+      {
+        name: "Linkedin",
+        url: "https://www.linkedin.com/in/majeed-mohtesham/",
+      },
       // {
       //   name: "Facebook",
       //   url: "https://www.facebook.com/",

@@ -74,6 +74,20 @@ export const Footer = () => {
             </a>
           </div>
         </div>
+        <div className="flex flex-col gap-4">
+          <h3 className="font-bold text-lg text-gray-800 dark:text-gray-100">
+            Address
+          </h3>
+          <div>
+            <a
+              rel="noreferrer noopener"
+              href="#"
+              className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
+            >
+              Abumatics, Moulana Azad Road, Bhatkal 581320
+            </a>
+          </div>
+        </div>
       </section>
 
       {/* Credits Section */}

@@ -58,7 +58,8 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="tel:+918660822267"
+              aria-label="Call +91 86608 22267"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
               +91 86608 22267
@@ -67,7 +68,7 @@ export const Footer = () => {
           <div>
             <a
               rel="noreferrer noopener"
-              href="#"
+              href="mailto:support@abumatics.com"
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
             support@abumatics.com
@@ -79,13 +80,11 @@ export const Footer = () => {
             Address
           </h3>
           <div>
-            <a
-              rel="noreferrer noopener"
-              href="#"
+            <p
               className="opacity-70 hover:opacity-100 transition-all text-gray-600 dark:text-gray-300"
             >
               Abumatics, Moulana Azad Road, Bhatkal 581320
-            </a>
+            </p>
           </div>
         </div>
       </section>
